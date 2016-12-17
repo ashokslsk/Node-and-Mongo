@@ -7,6 +7,12 @@ const args = process.argv.slice(2);
 
 let name = args[0];
 
+console.log('======== Welcome =======', name);
+if(!name){
+	process.stdout.write("Please enter your name.")
+	process.exit(1);
+}
+
 const availableIntensities = ['low','medium','high'];
 let intensity = availableIntensities.indexOf(args[1] > -1 ? args[1] : 'low');
 
