@@ -1,0 +1,11 @@
+'use strict';
+
+const express = require('express');
+const app = express();
+
+app.get('/', function (request, response){
+	response.send('Hello world');
+});
+
+app.listen(3000);
+console.log('open: the link: http://127.0.0.1:3000/');
